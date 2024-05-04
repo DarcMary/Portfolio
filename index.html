@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
@@ -125,15 +126,21 @@
             <div>
                 <h2>Contato</h2>
                 <p>Preencha o formulário e entrarei em contato</p>
-                <form onsubmit="return false" method="POST">
+                <form id="formulario">
                     <input type="text" id="nome" placeholder="Nome">
+                    <span id="nome-error" class = "error"></span>
                     <input type="email" id="email" placeholder="Email">
+                    <span id="email-error" class = "error"></span>
                     <input type="text" id="assunto" placeholder="Assunto">
+                    <span id="assunto-error" class = "error"></span>
                     <textarea rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                    <button onclick="">Enviar mensagem</button>
+                    <span id="mensagem-error" class = "error"></span>
+                    <button type="submit" id="enviar-button">Enviar mensagem</button>
                 </form>
             </div>
+        </section>
     </main>
 <footer>Desenvolvido por Darc Mary - 2024</footer>
+<script src="app.js"></script>
 </body>
 </html>
