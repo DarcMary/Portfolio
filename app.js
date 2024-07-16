@@ -62,4 +62,8 @@ function validateForm(event) {
     } else {
         document.getElementById("mensagem-error").innerText = "";
     }
-}   
+    
+    const mailtoLink = `mailto:darcmary12@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(mensagem)}%0A%0A${encodeURIComponent(nome)}`;
+
+    window.location.href = mailtoLink;
+};

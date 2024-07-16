@@ -1,5 +1,125 @@
-.profile_image {
-    width: 368px;
-    height: 368px;
-    border-radius: 80%; 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+}
+
+header nav a {
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+header span {
+    font-size: 0.9em;
+    color: #777;
+}
+
+main section {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+main p {
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+main section img.profile_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+main section div a {
+    margin-right: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.skills, .hobbies, .education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills div, .hobbies div, .education div {
+    width: 48%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills div img, .hobbies div img, .education div img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 20px;
+    }
+
+    .skills div, .hobbies div, .education div {
+        width: 100%;
+    }
 }
